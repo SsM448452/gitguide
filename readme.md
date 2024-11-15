@@ -43,3 +43,31 @@ git status
 git merge dir/branch-name
 git status
 ```
+
+### 7. Create Stash  
+```
+git status
+git stash
+git status
+```
+
+### 8. Apply Stash  
+```
+git stash list
+git stash apply
+git status
+```
+
+### 9. Drop Stash  
+```
+git stash list
+git stash drop 1
+git stash list
+```
+
+### 10. Pop Stash  
+```
+git stash list
+git stash pop
+git stash list
+```
