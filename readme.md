@@ -72,9 +72,14 @@ git stash pop
 git stash list
 ```
 
-### 11
+### 11. Revert Commit
 ```
 Revert Commit  
 git log --oneline
 git revert [COMMIT_ID]
+```
+### 12.Cherry Pick  
+```
+git log --oneline
+git cherry-pick [COMMIT_ID]
 ```
