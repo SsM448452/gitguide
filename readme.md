@@ -89,11 +89,16 @@ git cherry-pick [COMMIT_ID]
 ```
 git log --oneline
 git reset --soft HEAD~1
+(git reset --mixed HEAD~1, Resetea el indice pero no el directorio de trabajo)
+(git reset --hard HEAD~1, Resetea el indice y el directorio de trabajo)
+(git reset --merge HEAD~1, Resetea el indice y actualiza los archivos en el arbol de trabajo que son diferentes entre HEAD y el commit dado, pero mantiene los demas sin tocar.)
 ```
 
 ### 14.Create Patch  
 ```
 git diff HEAD > <file>
+(git format-patch -1 HEAD, Crea un archivo patch para uno o mas commits)
+(git format-patch <start_commit>..<end_commit>, Esto generara un archivo patch en el directorio actual para el ultimo commit. Tambien puedes especificar un rango de commits, ejemplo: git format-patch abc123..def456)
 ```
 
 ### 15.Apply Patch  
